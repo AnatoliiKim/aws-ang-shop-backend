@@ -35,7 +35,8 @@ const serverlessConfiguration: AWS = {
       concurrency: 10,
     },
     autoswagger: {
-      typefiles: ['./src/interfaces/product.interface.ts']
+      typefiles: ['./src/interfaces/product.interface.ts'],
+      host: '7e4a0t2cna.execute-api.us-east-1.amazonaws.com/dev/',
     }
   },
 };
