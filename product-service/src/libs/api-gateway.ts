@@ -22,6 +22,13 @@ export const errorNotFoundResponse = () => {
   };
 };
 
+export const errorInvalidDataResponse = () => {
+  return {
+    statusCode: 400,
+    body: JSON.stringify({error: 'Product creation failed'}),
+  };
+};
+
 export const errorServiceUnavailableResponse = () => {
   return {
     statusCode: 500,
